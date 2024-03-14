@@ -50,7 +50,7 @@ const VisitorTable: React.FC<VisitorTableProps> = ({
   };
 
   const isAllSelected = useMemo(() => {
-    return selectedVisitors.length === visitors.length;
+    return selectedVisitors.length === visitors.length && visitors.length > 0;
   }, [selectedVisitors, visitors]);
 
   const isSelected = useMemo(
